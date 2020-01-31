@@ -43,7 +43,7 @@ class User {
 					?, # 'lastName'
 					?, # 'email'
 					?, # 'ldap_objectguid'
-					?  # 'current' - Set to default of 7. No db default set.
+					?  # 'current' - Set to default of 1. No db default set.
 				)"
 			);
 
@@ -56,7 +56,7 @@ class User {
 					$this->ldap_data['sn'][0],
 					$this->ldap_data['mail'][0],
 					$guid,
-					7
+					1
 				) );
 
 
